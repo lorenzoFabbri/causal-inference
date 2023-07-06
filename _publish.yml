@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: 96b95a84-5d58-452d-8e03-aedfc8328836
+      url: 'https://lorenzof.quarto.pub/topics-in-causal-inference'
