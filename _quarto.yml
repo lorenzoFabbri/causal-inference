@@ -1,0 +1,44 @@
+project:
+  type: book
+
+book:
+  title: "Topics in Causal Inference"
+  author:
+    - name: Lorenzo Fabbri
+  search:
+    location: navbar
+    type: overlay
+  downloads: [pdf]
+  sharing: [twitter]
+  #cover-image: cover.png
+  chapters:
+    - index.qmd
+    - part: "Misc"
+      chapters:
+        - chapters/efficiency.qmd
+    - chapters/dr.qmd
+    - chapters/mtp.qmd
+    - chapters/references.qmd
+  page-navigation: true
+
+bibliography: causality.bib
+link-citations: true
+linkcolor: blue
+
+execute:
+  echo: false
+  warning: false
+  error: false
+  message: false
+editor_options: 
+  chunk_output_type: console
+
+format:
+  html:
+    theme: cosmo
+    html-math-method: mathjax
+  pdf:
+    documentclass: scrreprt
+    pdf-engine: xelatex
+    number-sections: true
+    toc: true

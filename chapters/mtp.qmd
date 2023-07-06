@@ -1,0 +1,31 @@
+```{mermaid}
+flowchart LR
+  DiazWilliamsHoffman2023[Diaz et al. 2023] --> KennedyMaMcHugh2017[Kennedy et al. 2017]
+  KennedyMaMcHugh2017 --> vanderLaanDudoit2003[van der Laan and Dudoit 2003]
+  KennedyMaMcHugh2017 --> d2013b[I. Díaz and Laan 2013]
+  KennedyMaMcHugh2017 --> gill2001a[Gill and Robins 2001]
+  KennedyMaMcHugh2017 --> rubin2005a[Rubin and Laan 2005]
+  KennedyMaMcHugh2017 --> rubin2007a[Rubin and Laan 2007]
+```
+
+# Modified Treatment Policy
+
+## Estimation
+
+From the abstract of [@vanderLaanDudoit:2003]:
+
+From the abstract of [@rubin2005a]:
+
+From the abstract of [@rubin2007a]:
+
+## Continuous treatments
+
+From the abstract of [@gill2001a]:
+
+From the abstract of [@KennedyMaMcHugh:2017]:
+
+> **Continuous treatments** (e.g. doses) arise often in practice, but many available causal effect estimators are limited by either requiring parametric models for the effect curve, or by not allowing doubly robust covariate adjustment. We develop a novel **kernel smoothing approach** that requires only mild smoothness assumptions on the effect curve and still allows for misspecification of either the treatment density or outcome regression. We derive asymptotic properties and give a procedure for data-driven bandwidth selection. The methods are illustrated via simulation and in a study of the effect of nurse staffing on hospital readmissions penalties.
+
+From the abstract of [@d2013b]:
+
+From the abstract of [@DiazWilliamsHoffman:2023]:
