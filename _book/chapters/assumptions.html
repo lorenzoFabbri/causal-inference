@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Topics in Causal Inference - 1&nbsp; Non-Parametric Efficiency Theory</title>
+<title>Topics in Causal Inference - 1&nbsp; Interaction and Effect Modification</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -49,7 +49,7 @@ div.csl-indent {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../chapters/dr.html" rel="next">
+<link href="../chapters/efficiency.html" rel="next">
 <link href="../index.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -61,11 +61,11 @@ div.csl-indent {
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 20,
   "language": {
     "search-no-results-text": "No results",
@@ -95,7 +95,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/misc.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Non-Parametric Efficiency Theory</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/assumptions.html">Assumptions</a></li><li class="breadcrumb-item"><a href="../chapters/assumptions.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Interaction and Effect Modification</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -130,22 +130,50 @@ div.csl-indent {
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Assumptions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/misc.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Non-Parametric Efficiency Theory</span></span></a>
+  <a href="../chapters/assumptions.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Interaction and Effect Modification</span></span></a>
   </div>
 </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Misc</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/efficiency.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Non-Parametric Efficiency Theory</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/dr.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Debiased Learning</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Debiased Learning</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/mtp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Modified Treatment Policy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Modified Treatment Policy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -167,7 +195,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Non-Parametric Efficiency Theory</span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Interaction and Effect Modification</span></h1>
 </div>
 
 
@@ -187,21 +215,28 @@ div.csl-indent {
 <div>
 <div>
 <pre class="mermaid mermaid-js">flowchart LR
-  HinesDukesDiazOrdaz2022[Hines et al. 2022] --&gt; chernozhukov2018a[Chernozhukov et al. 2018]
+  VanderWeele2009a[VanderWeele 2009] --&gt; VansteelandtVanderWeeleTchetgen:2008[Vansteelandt et al. 2008]
 </pre>
 </div>
 </div>
 </div>
 </div>
-<p>From the abstract of <span class="citation" data-cites="HinesDukesDiaz-Ordaz:2022">(<a href="references.html#ref-HinesDukesDiaz-Ordaz:2022" role="doc-biblioref">Hines et al. 2022</a>)</span>:</p>
+<p>From the abstract of <span class="citation" data-cites="VanderWeele:2009a">(<a href="references.html#ref-VanderWeele:2009a" role="doc-biblioref">VanderWeele 2009</a>)</span>:</p>
 <blockquote class="blockquote">
-<p>Evaluation of treatment effects and more general estimands is typically achieved via parametric modelling, which is unsatisfactory since model misspecification is likely. Data-adaptive model building (e.g.&nbsp;statistical/machine learning) is commonly employed to reduce the risk of misspecification. Naive use of such methods, however, delivers estimators whose bias may shrink too slowly with sample size for inferential methods to perform well, including those based on the bootstrap. Bias arises because standard data-adaptive methods are tuned towards minimal prediction error as opposed to e.g.&nbsp;minimal MSE in the estimator. This may cause excess variability that is difficult to acknowledge, due to the complexity of such strategies. Building on results from <strong>nonparametric statistics</strong>, <strong>targeted learning</strong> and <strong>debiased machine learning</strong> overcome these problems by constructing estimators using the estimand’s <strong>efficient influence function</strong> under the nonparametric model. These increasingly popular methodologies typically assume that the efficient influence function is given, or that the reader is familiar with its derivation. In this paper, we focus on derivation of the efficient influence function and explain how it may be used to construct statistical/machine-learning-based estimators. We discuss the requisite conditions for these estimators to perform well and use diverse examples to convey the broad applicability of the theory.</p>
+<p>This paper contrasts the concepts of interaction and effect modification using a series of examples. Interaction and effect modification are formally defined within the counterfactual framework. Interaction is defined in terms of the effects of 2 interventions whereas effect modification is defined in terms of the effect of one intervention varying across strata of a second variable. Effect modification can be present with no interaction; interaction can be present with no effect modification. There are settings in which it is possible to assess effect modification but not interaction, or to assess interaction but not effect modification. The analytic procedures for obtaining estimates of effect modification parameters and interaction parameters using marginal structural models are compared and contrasted. A characterization is given of the settings in which interaction and effect modification coincide.</p>
+</blockquote>
+<p>From the abstract of <span class="citation" data-cites="VansteelandtVanderWeeleTchetgen:2008">(<a href="references.html#ref-VansteelandtVanderWeeleTchetgen:2008" role="doc-biblioref">Vansteelandt et al. 2008</a>)</span>:</p>
+<blockquote class="blockquote">
+
 </blockquote>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-HinesDukesDiaz-Ordaz:2022" class="csl-entry" role="listitem">
-Hines, Oliver, Oliver Dukes, Karla Diaz-Ordaz, and Stijn Vansteelandt. 2022. <span>“Demystifying <span>Statistical Learning Based</span> on <span>Efficient Influence Functions</span>.”</span> <em>The American Statistician</em> 76 (3): 292–304. <a href="https://doi.org/10.1080/00031305.2021.2021984">https://doi.org/10.1080/00031305.2021.2021984</a>.
+<div id="ref-VanderWeele:2009a" class="csl-entry" role="listitem">
+VanderWeele, Tyler J. 2009. <span>“On the <span>Distinction Between Interaction</span> and <span>Effect Modification</span>.”</span> <em>Epidemiology</em> 20 (6): 863. <a href="https://doi.org/10.1097/EDE.0b013e3181ba333c">https://doi.org/10.1097/EDE.0b013e3181ba333c</a>.
+</div>
+<div id="ref-VansteelandtVanderWeeleTchetgen:2008" class="csl-entry" role="listitem">
+Vansteelandt, Stijn, Tyler J. VanderWeele, Eric J. Tchetgen, and James M. Robins. 2008. <span>“Multiply <span>Robust Inference</span> for <span>Statistical Interactions</span>.”</span> <em>Journal of the American Statistical Association</em> 103 (484): 1693–1704. <a href="https://doi.org/10.1198/016214508000001084">https://doi.org/10.1198/016214508000001084</a>.
 </div>
 </div>
 
@@ -446,8 +481,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/dr.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Debiased Learning</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapters/efficiency.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Non-Parametric Efficiency Theory</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

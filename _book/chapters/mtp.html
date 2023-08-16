@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Topics in Causal Inference - 3&nbsp; Modified Treatment Policy</title>
+<title>Topics in Causal Inference - 4&nbsp; Modified Treatment Policy</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -95,7 +95,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/mtp.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Modified Treatment Policy</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/mtp.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Modified Treatment Policy</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -133,7 +133,7 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Misc</span></a>
+ <span class="menu-text">Assumptions</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -141,8 +141,25 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../chapters/assumptions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Interaction and Effect Modification</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Misc</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../chapters/efficiency.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Non-Parametric Efficiency Theory</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Non-Parametric Efficiency Theory</span></span></a>
   </div>
 </li>
       </ul>
@@ -150,13 +167,13 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/dr.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Debiased Learning</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Debiased Learning</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/mtp.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Modified Treatment Policy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Modified Treatment Policy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -175,8 +192,8 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#estimation" id="toc-estimation" class="nav-link active" data-scroll-target="#estimation"><span class="header-section-number">3.1</span> Estimation</a></li>
-  <li><a href="#continuous-treatments" id="toc-continuous-treatments" class="nav-link" data-scroll-target="#continuous-treatments"><span class="header-section-number">3.2</span> Continuous treatments</a></li>
+  <li><a href="#estimation" id="toc-estimation" class="nav-link active" data-scroll-target="#estimation"><span class="header-section-number">4.1</span> Estimation</a></li>
+  <li><a href="#continuous-treatments" id="toc-continuous-treatments" class="nav-link" data-scroll-target="#continuous-treatments"><span class="header-section-number">4.2</span> Continuous treatments</a></li>
   </ul>
 </nav>
     </div>
@@ -185,7 +202,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Modified Treatment Policy</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Modified Treatment Policy</span></h1>
 </div>
 
 
@@ -216,14 +233,14 @@ div.csl-indent {
 </div>
 </div>
 </div>
-<section id="estimation" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="estimation"><span class="header-section-number">3.1</span> Estimation</h2>
+<section id="estimation" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="estimation"><span class="header-section-number">4.1</span> Estimation</h2>
 <p>From the abstract of <span class="citation" data-cites="vanderLaanDudoit:2003">(<a href="references.html#ref-vanderLaanDudoit:2003" role="doc-biblioref">van der Laan and Dudoit 2003</a>)</span>:</p>
 <p>From the abstract of <span class="citation" data-cites="rubin2005a">(<a href="references.html#ref-rubin2005a" role="doc-biblioref">Rubin and Laan 2005</a>)</span>:</p>
 <p>From the abstract of <span class="citation" data-cites="rubin2007a">(<a href="references.html#ref-rubin2007a" role="doc-biblioref">Rubin and Laan 2007</a>)</span>:</p>
 </section>
-<section id="continuous-treatments" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="continuous-treatments"><span class="header-section-number">3.2</span> Continuous treatments</h2>
+<section id="continuous-treatments" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="continuous-treatments"><span class="header-section-number">4.2</span> Continuous treatments</h2>
 <p>From the abstract of <span class="citation" data-cites="gill2001a">(<a href="references.html#ref-gill2001a" role="doc-biblioref">Gill and Robins 2001</a>)</span>:</p>
 <p>From the abstract of <span class="citation" data-cites="KennedyMaMcHugh:2017">(<a href="references.html#ref-KennedyMaMcHugh:2017" role="doc-biblioref">Kennedy et al. 2017</a>)</span>:</p>
 <blockquote class="blockquote">
@@ -495,7 +512,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../chapters/dr.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Debiased Learning</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Debiased Learning</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

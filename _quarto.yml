@@ -13,6 +13,9 @@ book:
   #cover-image: cover.png
   chapters:
     - index.qmd
+    - part: "Assumptions"
+      chapters:
+        - chapters/assumptions.qmd
     - part: "Misc"
       chapters:
         - chapters/efficiency.qmd
